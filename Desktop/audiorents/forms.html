@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Audio Rents Inc.</title>
 
+    <!--Title tab icon-->
+    <link rel="icon" href="images/logo_cut.png" type="image/icon type">
+
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
@@ -15,49 +18,148 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
+    <!--Green banner background-->
+    <div class="banner">
+        <!--AUDIO RENTS LOGO-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <a class="nav-link" href="index.html">
+                        <img src="images/logo_cut.png" width="165" height="165" alt="audio rents logo" />
+                    </a>
+                </div>
+                <div class="col">
+                </div>
             </div>
-            <div class="col">
-                <a class="nav-link" href="index.html">
-                    <img src="images/logo.png" width="330" height="330" alt="audio rents logo" />
-                </a>
-            </div>
-            <div class="col">
+        </div>
 
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    323-874-1000
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                Serving Los Angeles Since 1975
+            </div>
+            <div class="col-4">
             </div>
         </div>
     </div>
 
+
+    <!--NAVBAR-->
     <nav>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <a class="nav-link" href="inventory.html">Inventory</a>
+
+                <div class="col-12 col-sm-3">
+                    <img class="tape" src="images/tape.png" width="175" />
+                    <div class="centered">
+                        <a class="nav-link" href="inventory.html">Inventory</a>
+                    </div>
                 </div>
-                <div class="col"><a class="nav-link" href="services.html">
-                        Services</a>
+                <div class="col-12 col-sm-3">
+                    <img class="tape" src="images/tape.png" width="175" />
+                    <div class="centered">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </div>
                 </div>
-                <div class="col"><a class="nav-link" href="#">
-                        Forms</a>
+                <div class="col-12 col-sm-3">
+                    <img class="tape" src="images/tape.png" width="175" />
+                    <div class="centered">
+                        <a class="nav-link" href="#">Forms</a>
+                    </div>
                 </div>
-                <div class="col"><a class="nav-link" href="index.html">
-                        About</a>
+                <div class="col-12 col-sm-3">
+                    <img class="tape" src="images/tape.png" width="175" />
+                    <div class="centered">
+                        <a class="nav-link" href="index.html">About</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div>
-        <img src="images/storefront.jpg" width="569" height="368" alt="picture of storefront" />
-    </div>
-    <div>
-        <h3>About Audio Rents Inc.</h3>
-        <p>Audio Rents Inc., is a pro-audio company with nearly 50 years in the business serving the Los Angeles area.
-            Ourwide selection of vintage and popular audio devices can be heard in use thoughout the works of our
-            clients
-            working in the recording and film industry behind the scenes.</p>
+    <!--Rental Form-->
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Submit your rental requests here:</h2>
+            </div>
+
+            <form>
+                <div class="form-group row">
+                    <label for="firstName" class="col-md-2 col-form-label">Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstName" name="firstName"
+                            placeholder="First/Last Name" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="lastName" class="col-md-2 col-form-label">Company Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="companyName" name="lastName"
+                            placeholder="Studio/Label" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                    </div>
+                    <div class="col-7">
+                        <input type="tel" class="form-control" name="telNum" placeholder="Tel.number" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col col-md-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col offset-md-2">
+                        Have you rented with us?
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="contactRadios" value="yes" />
+                            <label type="contactYes" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="contactRadios" value="no" />
+                            <label type="contactNo" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Gear Request</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="feedback" name="feedback" rows="8"
+                            placeholder="What gear are you looking to rent?"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
     </div>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
