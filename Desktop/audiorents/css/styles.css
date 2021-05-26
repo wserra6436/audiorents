@@ -1,8 +1,12 @@
 body {
     background-color: black;
-    color: rgb(131, 199, 111);
+    color: white;
     font-family: "chalkduster";
     text-align: center;
+}
+
+h2 {
+    background-image: linear-gradient(to left, black, rgb(20, 73, 4), black);
 }
 
 .centered {
@@ -47,18 +51,32 @@ a:active {
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 .form-group {
     text-align: justify;
 }
 
-form { 
+form {
     text-align: center;
-    margin: 0 auto; 
-    width:1000px;
-    }
+    margin: 0 auto;
+    width: 1000px;
+}
 
-.form-groupl { 
-        display:inline-block; 
-        }    
+.form-groupl {
+    display: inline-block;
+}
+
+.col-md-4 {
+    background-color: black;
+}
+
+.card {
+    background-color: black;
+    color: white;
+}
+
+small {
+    color: black;
+}
+
