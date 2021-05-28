@@ -72,11 +72,28 @@ form {
 }
 
 .card {
-    background-color: black;
+    background-image: linear-gradient(to left, black, rgb(20, 73, 4), black);
     color: white;
 }
 
 small {
     color: black;
 }
+
+.brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.brightness img:hover {
+    opacity: .5;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
 
